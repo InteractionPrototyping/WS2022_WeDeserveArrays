@@ -1,0 +1,402 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: #bbd01b;
+  --f7-theme-color-rgb: 187, 208, 27;
+  --f7-theme-color-shade: #9bac16;
+  --f7-theme-color-tint: #cfe430;
+}
+
+/* Your app custom styles here */
+
+/*Preorder screen flex container*/
+.button-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*QR Code Picture adjustment*/
+.qr-code {
+  height: 50px;
+  width: 50px;
+}
+
+.buttons-preorder {
+  width: 50vw;
+  height: 50vw;
+  margin: 5px;
+}
+
+/*text align payment screen*/
+.dish {
+  float: left;
+}
+
+.price {
+  float: right;
+}
+
+/* make elements full width */
+.full-width {
+  width: 100%;
+}
+
+/*style for confirm button*/
+.confirm-button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+/*alignment of payment screen*/
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ORDER SCREEN */
+
+/*extra height so bottom button doesn't cover important content
+#order-page {
+  min-height: 555px;
+} */
+
+/*style for past-orders button*/
+.orders-button {
+  padding: 15px 14px 15px 10px;
+  font-size: 11px;
+}
+
+/*style for order icon*/
+.orders-icon {
+  padding: 0px 1.5px 1px 2.5px;
+  font-size: 15px;
+}
+
+/*style for serving-counter*/
+.serving-counter {
+  margin: 2.5px -10px 0px 0px;
+}
+
+/*style for order-price*/
+.order-price {
+  margin: 5px 15px -5px 0px;
+}
+
+/*style for sub-total row*/
+#sub-total {
+  margin: 5px 0px 5px 0px;
+}
+#sub-price {
+  margin-right: 15px;
+}
+
+/*style for action button at bottom of screen row*/
+#order-button,
+#add-button {
+  width: 92vw;
+  position: fixed;
+  bottom: 75px;
+}
+
+/* PAST-ORDER SCREEN */
+
+/*style for order-again button*/
+.order-again {
+  margin: 15px 0px -15px 0px;
+  font-size: 11px;
+}
+
+/*style for restaurant-image*/
+.detailed {
+  margin: 5px 0px 5px 0px;
+}
+
+/* DETAILED-VIEW SCREEN */
+
+/*extra height so button doesn't cover important content*/
+#last-card {
+  min-height: 170px;
+}
+
+#item-counter {
+  /* centering element */
+  margin-left: calc(50vw - 86.5px);
+}
+
+#picture-wrapper {
+  position: relative;
+}
+
+#detailed-arrow {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/*Style Cards CSS*/
+
+.demo-card-header-pic .card-header {
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.demo-card-header-pic .card-content-padding .date {
+  color: #8e8e93;
+}
+
+.demo-facebook-card .card-header {
+  display: block;
+  padding: 10px;
+}
+
+.demo-facebook-card .demo-facebook-avatar {
+  float: left;
+}
+
+.demo-facebook-card .demo-facebook-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.demo-facebook-card .demo-facebook-date {
+  margin-left: 44px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+
+.demo-facebook-card .card-footer {
+  background: #fafafa;
+}
+
+.demo-facebook-card .card-footer a {
+  color: #81848b;
+  font-weight: 500;
+}
+
+.demo-facebook-card .card-content img {
+  display: block;
+}
+
+.demo-facebook-card .card-content-padding {
+  padding: 15px 10px;
+}
+
+.demo-facebook-card .card-content-padding .likes {
+  color: #8e8e93;
+}
+
+/*Onboarding Screens*/
+
+/*Screen 1*/
+
+#onboarding-title-image {
+  position: absolute;
+  width: 293px;
+  height: 90px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 35px;
+  transform: rotate(1.59deg);
+}
+
+#onboarding-splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#onboarding-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 84.95%;
+  width: 31.38%; /* Need a specific value to work */
+  height: 4.91%;
+  background: #3a3b38;
+  color: #bbd01b;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+}
+
+#onboarding-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 3%;
+}
+
+/*Screen 2*/
+
+.onboarding-titles {
+  position: flex;
+  text-align: center;
+  margin-top: 16px;
+  font-size: large;
+}
+
+.tile-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10%;
+  font-size: larger;
+
+}
+
+/*Screen 3*/
+
+.onboard-chips-selected {
+
+  /* On Surface / Disabled */
+
+  color: #bdbc60;
+
+  background: rgba(187, 208, 27, 0.08);
+  /* Alley light green */
+
+ 
+}
+
+/*Feedback Screen*/
+
+/* .feedblur {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  border-style: none;
+} */
+
+/* Position text in the middle of the page/image */
+.feedcard {
+  position: fixed;
+  width: 77%;
+  height: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 18%;
+  z-index: 3;
+  opacity: 1;
+}
+
+.feedcontainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.feedtitle {
+  position: absolute;
+  left: 4.75%;
+  top: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  /* final color palette/white */
+  color: #fcfef2;
+  mix-blend-mode: normal;
+}
+
+.feedcontent-1 {
+  position: absolute;
+  left: 7.75%;
+  top: 255.85%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* Burntpizza/Burntpizza white */
+  color: #f8f3df;
+}
+
+.feedcontent-2 {
+  position: absolute;
+  left: 7.75%;
+  top: 410%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  /* final color palette/medium Light brown */
+  color: #9b9c95;
+}
+
+.rating {
+  position: absolute;
+  left: 36.5%;
+  right: 35%;
+  margin: 0 auto;
+  top: 785%;
+}
+.feedbutton {
+  position: absolute;
+  left: 20.5px;
+  right: 20.53px;
+  margin: 0 auto;
+  top: 950%;
+}
+
+.feedcontent-3 {
+  position: absolute;
+  left: 117px;
+  right: 115px;
+  margin: 0 auto;
+  top: 1115%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  /* final color palette/white */
+  color: #fcfef2;
+  mix-blend-mode: normal;
+}
+
+ #common-toolbar {
+   display: none;
+ }

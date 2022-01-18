@@ -1,0 +1,57 @@
+<div class="page" data-name="order">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner" id="order-nav">
+      <div class="left">
+        <a href="#" class="link icon-only panel-open" data-panel="left">
+          <i class="icon f7-icons if-not-md">menu</i>
+          <i class="icon material-icons if-md">menu</i>
+        </a>
+
+        <div class="title">My Order</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollable page content-->
+  <div class="page-content">
+    <div class="list media-list inset" id="order-page">
+      <ul id="order-list">
+        <pre>   Your current order is empty!   </pre>
+      </ul>
+    </div>
+    <div class="list media-list inset" id="pastOrders-page">
+      <ul>
+        <li class="accordion-item">
+          <a class="item-content item-link accordian-title" href="#">
+            <div class="item-inner" onclick="expand();">
+              <span class="item-title">Past-Orders</span>
+              <i
+                class="material-icons material-icons-outlined"
+                id="accordian-icon"
+              >
+                expand_more
+              </i>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="block">
+              <ul id="pastOrders-list">
+                <pre>   Ordered but unpaid dishes go here!   </pre>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <a
+        class="col button button-large button-fill button-raised tab-link"
+        id="order-button"
+        >Order</a
+      >
+    </div>
+  </div>
+</div>

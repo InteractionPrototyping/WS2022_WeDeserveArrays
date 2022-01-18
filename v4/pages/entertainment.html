@@ -1,0 +1,107 @@
+<!--This page shows the Entertainment page, including a small minigame in which you have to sort the items in the correct order to win-->
+<div class="page" data-name="entertainment">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner" id="order-nav">
+      <div class="left">
+        <a href="#" class="link icon-only panel-open" data-panel="left">
+          <i class="icon f7-icons if-not-md">menu</i>
+          <i class="icon material-icons if-md">menu</i>
+        </a>
+
+        <div class="title">Entertainment</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list accordion-list inset">
+      <ul>
+        <li class="accordion-item">
+          <a href="" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Tic-Tac-Toe?</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <a href="#view-ttt" class="button tab-link" onclick="startGame();"
+              >TIC TAC TOE</a
+            >
+          </div>
+        </li>
+        <li class="accordion-item">
+          <a href="" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Are you an alcoholic?</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="block block-strong medium inset text-align-center">
+              Sort the following drinks by their alcohol content (top: least
+              alcohol - bottom: most alcohol)
+            </div>
+            <div class="list sortable" id="alcohol-list">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-f7"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Wine</div>
+                    </div>
+                  </div>
+                  <div class="sortable-handler"></div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-f7"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Beer</div>
+                    </div>
+                  </div>
+                  <div class="sortable-handler"></div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-f7"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Kombucha</div>
+                    </div>
+                  </div>
+                  <div class="sortable-handler"></div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-f7"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Water</div>
+                    </div>
+                  </div>
+                  <div class="sortable-handler"></div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-f7"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Grappa</div>
+                    </div>
+                  </div>
+                  <div class="sortable-handler"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <a
+                href=""
+                class="col button button-large button-fill button-raised tab-link"
+                onclick="checkAnswer();"
+                style="margin: 10px 0px 10px 0px"
+                >Confirm</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>

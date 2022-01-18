@@ -1,0 +1,29 @@
+<!-- Top Navbar -->
+<div class="page" data-name="dishoverview">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only panel-open" data-panel="left">
+          <i class="icon f7-icons if-not-md">menu</i>
+          <i class="icon material-icons if-md">menu</i>
+        </a>
+
+        <div class="title">Menu</div>
+      </div>
+      <div class = "right">
+        <button class="col button button-outline button-round" id = "filter-button" onclick = "toggleFilter(); showDishesFilter(); showFilterPopup();">
+          <i class="icon material-icons" id="filter-icon-on"> filter_list</i>
+          <i class="icon material-icons" id="filter-icon-off">filter_list_off</i>
+        </button>
+      </div>  
+     </div>
+  </div>
+  <div class="toolbar toolbar-top tabbar-scrollable">
+    <div class="toolbar-inner" id="menu-chips">
+      <!--scrollabe chips menu-->
+    </div>
+  </div>
+  <!--Tabs-->
+  <div class="tabs" id="tab-dishes"></div>
+</div>

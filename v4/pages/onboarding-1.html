@@ -1,0 +1,55 @@
+<div
+  class="page page-onboarding"
+  data-name="onboarding-1"
+  onclick="app.toolbar.hide('#common-toolbar', true);app.toolbar.show('#onboarding-2-toolbar', true)"
+>
+  <!-- Scrollable page content-->
+
+  <div class="page-content onboarding-1">
+    <div class="logo-container">
+      <img
+        class="onboarding-title-image"
+        src="assets/App Logo.png"
+        alt="Onboarding App Logo"
+        width="100%"
+      />
+    </div>
+    <a
+      href="#view-onboarding-2"
+      class="col button button-raised button-fill tab-link onboarding-button"
+      onclick="init();"
+      >Get Started</a
+    >
+  </div>
+  <div class="o-transparent-nav">
+    <div class="o-t_navbar-background"></div>
+    <div class="o-t_navbar-inner">
+      <!-- svg for the progress dot at the bottom of onboarding screen -->
+      <svg
+        class="onboarding-dots"
+        width="40"
+        height="10"
+        viewbox="0 0 40 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_184_660)">
+          <path
+            d="M5 0C2.25 0 0 2.25 0 5C0 7.75 2.25 10 5 10C7.75 10 10 7.75 10 5C10 2.25 7.75 0 5 0ZM35 0C32.25 0 30 2.25 30 5C30 7.75 32.25 10 35 10C37.75 10 40 7.75 40 5C40 2.25 37.75 0 35 0ZM20 0C17.25 0 15 2.25 15 5C15 7.75 17.25 10 20 10C22.75 10 25 7.75 25 5C25 2.25 22.75 0 20 0Z"
+            fill="#BBD01B"
+            fill-opacity="0.5"
+          />
+          <path
+            d="M5 0C2.25 0 0 2.25 0 5C0 7.75 2.25 10 5 10C7.75 10 10 7.75 10 5C10 2.25 7.75 0 5 0Z"
+            fill="#BBD01B"
+          />
+        </g>
+        <defs>
+          <clippath id="clip0_184_660">
+            <rect width="40" height="10" fill="white" />
+          </clippath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>

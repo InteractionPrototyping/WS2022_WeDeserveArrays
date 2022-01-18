@@ -1,0 +1,165 @@
+<!-- Top Navbar -->
+<div class="page" data-name="detailed-view">
+  <!-- Scrollable page content-->
+  <div class="page-content">
+    <div class="detailed-wrapper">
+      <div class="picture-wrapper">
+        <div class="transparent-nav">
+          <div class="t_navbar-background"></div>
+          <div class="t_navbar-inner">
+            <div class="left">
+              <a href="#view-dishoverview" class="tab-link" id="arrow_back">
+                <i class="icon f7-icons if-not-md">arrow_back</i>
+                <i class="icon material-icons if-md">arrow_back</i>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#" class="link">
+                <i class="icon f7-icons if-not-md">heart</i>
+                <i class="icon material-icons if-md">favorite_border</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/pizza-pep.jpg"
+          width="100%"
+          height="100%"
+          class="detailed-img"
+        />
+      </div>
+      <div class="content-wrapper">
+        <div class="block-title block-title-medium detailed-title">
+          Pepperoni Pizza
+        </div>
+        <!-- Stars-->
+        <svg
+          id="detailed-stars"
+          class="rating"
+          width="90"
+          height="15"
+          viewbox="0 0 90 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9 12.9525L13.635 15.75L12.405 10.4775L16.5 6.93L11.1075 6.4725L9 1.5L6.8925 6.4725L1.5 6.93L5.595 10.4775L4.365 15.75L9 12.9525Z"
+            fill="#BBD01B"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M45 12.9525L49.635 15.75L48.405 10.4775L52.5 6.93L47.1075 6.4725L45 1.5L42.8925 6.4725L37.5 6.93L41.595 10.4775L40.365 15.75L45 12.9525Z"
+            fill="#BBD01B"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M27 12.9525L31.635 15.75L30.405 10.4775L34.5 6.93L29.1075 6.4725L27 1.5L24.8925 6.4725L19.5 6.93L23.595 10.4775L22.365 15.75L27 12.9525Z"
+            fill="#BBD01B"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M63 12.9525L67.635 15.75L66.405 10.4775L70.5 6.93L65.1075 6.4725L63 1.5L60.8925 6.4725L55.5 6.93L59.595 10.4775L58.365 15.75L63 12.9525Z"
+            fill="#BBD01B"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M88.5 6.93L83.1075 6.465L81 1.5L78.8925 6.4725L73.5 6.93L77.595 10.4775L76.365 15.75L81 12.9525L85.635 15.75L84.4125 10.4775L88.5 6.93ZM81 11.5501V4.57507L82.2825 7.60507L85.5675 7.89007L83.0775 10.0501L83.8275 13.2601L81 11.5501Z"
+            fill="#BBD01B"
+          />
+        </svg>
+        <!-- ==== -->
+        <div class="card">
+          <div class="card-content card-content-padding detailed-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            pretium, nisl ac sagittis varius, ligula turpis convallis sem, vitae
+            vestibulum lorem augue vitae velit. Nulla eros eros, laoreet non mi
+            a, mattis convallis sapien. Morbi pharetra massa finibus urna
+            aliquam finibus. Donec magna lorem, tempor ac metus a, semper
+            blandit eros.
+          </div>
+        </div>
+
+        <div class="block-title block-title-medium">Ingredients</div>
+
+        <div id="allergy-paragraph">
+          <i class="material-icons md-18 allergy-badge-detail">priority_high</i>
+          <div class="block" style="display: inline; padding: auto">
+            Allergies Detected
+          </div>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li class="accordion-item">
+              <a class="item-content item-link" href="#">
+                <div class="item-inner">
+                  <div class="item-title">See Ingredients</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="list simple-list">
+                  <ul id="ingredient-list"></ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block-title block-title-medium">Add Ons</div>
+        <div class="card">
+          <div class="card-content">
+            <div class="list media-list no-ios-edges">
+              <ul id="addOns-list"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="block-title block-title-medium">Special Instructions</div>
+        <div id="last-card">
+          <div class="card">
+            <div class="card-content card-content-padding">
+              <div class="list inset">
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <input type="text" placeholder="No pineapple please!" />
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Item - Counter -->
+                <div
+                  class="stepper stepper-round stepper-init"
+                  id="item-counter"
+                >
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input
+                      id="stepper-value"
+                      type="text"
+                      value="6"
+                      min="0"
+                      max="100"
+                      step="1"
+                      readonly
+                    />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <!-- ============== -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block detailedBtn-block"></div>
+  </div>
+</div>

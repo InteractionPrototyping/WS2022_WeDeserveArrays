@@ -5,13 +5,12 @@ var app = new Framework7({
   name: "Code Menu App", // App name
   theme: "auto", // Automatic theme detection
   el: "#app", // App root element
-  
 
   id: "io.framework7.myapp", // App bundle ID
   // App routes
   routes: routes,
   dialog: {
-    buttonCancel: 'No'
+    buttonCancel: "No",
   },
 
   // Input settings
@@ -43,13 +42,13 @@ var app = new Framework7({
 //========================================================QUALITATIVE EVALUATION STUFF=======================================================================================================================================
 
 //record number of clicks for qualitative assessment
- let totalClicks = 0;
+let totalClicks = 0;
 
- $("body").click(function () {
-   //record number of clicks
-   totalClicks++;
-   console.log(`Total number of clicks: `, totalClicks);
- });
+$("body").click(function () {
+  //record number of clicks
+  totalClicks++;
+  console.log(`Total number of clicks: `, totalClicks);
+});
 
 //========================================================GLOBAL STUFF=======================================================================================================================================
 let selectedDish;
@@ -193,7 +192,6 @@ function displayToolbar(a) {
 
 let filter = true;
 
-
 //========================================================DISH-MENU STUFF=======================================================================================================================================
 
 let currentTab;
@@ -231,7 +229,6 @@ function activateChips(selectedChip) {
   //show active chip in dishmenu by highlighting it
   var allChips = document.getElementsByName("menu-chips");
   for (var i = 0; i < allChips.length; i++) {
-
     allChips[i].classList.remove("chips-activated");
   }
   document.getElementById(selectedChip).classList.add("chips-activated");
@@ -1131,6 +1128,14 @@ function loadDetailedView(from) {
 
   stpValueInt = app.stepper.getValue("#steppy");
 
+  //reset back arrow link
+  document
+    .querySelector("#arrow_back")
+    .removeAttribute("onclick", "app.tab.show('#view-dishoverview')");
+  document
+    .querySelector("#arrow_back")
+    .removeAttribute("onclick", "app.tab.show('#view-order')");
+
   //fix incosistent image height
   imageHeight = document.getElementById("detailed-img").height;
   body45vh = 0.45 * document.body.clientHeight;
@@ -1140,6 +1145,9 @@ function loadDetailedView(from) {
   }
 
   if (from == "dishoverview") {
+    document
+      .querySelector("#arrow_back")
+      .setAttribute("onclick", "app.tab.show('#view-dishoverview')");
     app.stepper.setValue("#steppy", 1);
     resetCheckboxes();
 
@@ -1156,6 +1164,9 @@ function loadDetailedView(from) {
       updateDetailedPrice("dontMatter", "dishoverview");
     });
   } else if (from == "orderscreen") {
+    document
+      .querySelector("#arrow_back")
+      .setAttribute("onclick", "app.tab.show('#view-order')");
     //load rest of elements on page: using data from local storage
     for (j = 0; j < selectedDish.id; j++) {
       if (orderedDishes[j + 1] != null) {

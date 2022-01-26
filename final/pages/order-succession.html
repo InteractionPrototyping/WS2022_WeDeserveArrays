@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<div class="page" data-name="order-succession">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg overview-page overview-navbar"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a
+          href="#view-order"
+          class="link icon-only tab-link x-close"
+          onclick="displayToolbar(1);emergencyExit(true);"
+        >
+          <i class="icon f7-icons if-not-md">multiply</i>
+          <i class="icon material-icons if-md">close</i>
+        </a>
+      </div>
+      <div class="right">
+        <span
+          id="x-countdown"
+          style="position: absolute; right: 20px; top: 13px; font-size: 16px"
+          >10</span
+        >
+        <span class="preloader color-green x-load"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollable page content-->
+  <div class="page-content">
+    <div class="list media-list inset" id="overview-page">
+      <img src="assets/OrderPlaced.png" id="order-placed-img" alt="image" />
+    </div>
+    <div id="overview"></div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<div class="page" data-name="order">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner" id="order-nav">
+      <div class="left">
+        <a href="#" class="link icon-only panel-open" data-panel="left">
+          <i class="icon f7-icons if-not-md">menu</i>
+          <i class="icon material-icons if-md">menu</i>
+        </a>
+
+        <div class="title">My Order</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollable page content-->
+  <div class="page-content">
+    <div class="list media-list inset" id="order-page">
+      <img src="assets/EmptyOrder.png" id="empty-order-img" alt="image" />
+      <ul id="order-list"></ul>
+    </div>
+    <div class="list accordion-opposite media-list inset" id="pastOrders-page">
+      <ul>
+        <li class="accordion-item">
+          <a class="item-content item-link accordian-title">
+            <div class="item-inner">
+              <div class="item-title-row" style="padding-right: 0px">
+                <div class="item-title">Already ordered</div>
+                <div
+                  class="item-after"
+                  id="ordered-already"
+                  style="margin-right: 15px"
+                >
+                  12.50€
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="block">
+              <ul id="pastOrders-list">
+                <pre>   Ordered but unpaid dishes go here!   </pre>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="list media-list inset total-parent">
+      <ul id="total-section"></ul>
+    </div>
+    <div class="block">
+      <button
+        class="col button button-large button-fill button-raised tab-link text-color-black"
+        id="order-button"
+      >
+        Place Order
+      </button>
+    </div>
+  </div>
+</div>

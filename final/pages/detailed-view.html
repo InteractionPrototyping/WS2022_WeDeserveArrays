@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Top Navbar -->
+<div class="page" data-name="detailed-view">
+  <!-- Scrollable page content-->
+  <div class="page-content" id="detailed-scrollable">
+    <div class="detailed-wrapper">
+      <div class="picture-wrapper">
+        <div class="transparent-nav">
+          <div class="t_navbar-background">
+            <div class = "fade-up"></div>
+          </div>
+          <div class="t_navbar-inner">
+            <div class="left">
+              <a
+                class="tab-link"
+                id="arrow_back"
+                onclick="app.tab.show('#view-dishoverview')"
+              >
+                <i class="icon f7-icons if-not-md ">arrow_back</i>
+                <i class="icon material-icons if-md ">arrow_back</i>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#" class="link">
+                <i class="icon f7-icons if-not-md ">heart</i>
+                <i class="icon material-icons if-md favourite-button "
+                  >favorite_border</i
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <img width="auto" height="auto" id="detailed-img" />
+      </div>
+      <div class="content-wrapper">
+        <div class="block-title block-title-medium detailed-title">
+          <!-- Dish Title -->
+        </div>
+        <!-- ==== -->
+        <div class="card">
+          <div class="card-content card-content-padding detailed-desc">
+            <!-- Dish Description -->
+          </div>
+        </div>
+
+        <div class="block-title block-title-medium">Ingredients</div>
+
+        <div id="allergy-paragraph">
+          <i class="material-icons md-18 allergy-badge-detail">priority_high</i>
+          <div class="block" style="display: inline; padding: auto">
+            Allergies Detected
+          </div>
+        </div>
+
+        <div class="list inset">
+          <ul>
+            <li class="accordion-item">
+              <a class="item-content item-link" href="#">
+                <div class="item-inner">
+                  <div class="item-title">See Ingredients</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="list simple-list">
+                  <ul id="ingredient-list"></ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block-title block-title-medium">Add Ons</div>
+        <div class="card">
+          <div class="card-content">
+            <div class="list media-list no-ios-edges">
+              <ul id="addOns-list"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="block-title block-title-medium">Special Instructions</div>
+        <div class="card">
+          <div class="card-content card-content-padding">
+            <div class="list inset">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <input type="text" placeholder="Add note here" />
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="block-title block-title-medium">Servings:</div>
+        <!-- New Stepper home -->
+        <div id="last-card">
+          <div class="card last-card">
+            <div class="card-content card-content-padding">
+              <div class="list inset">
+                <!-- Item - Counter -->
+                <div class="stepper stepper-round stepper-init" id="steppy">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input
+                      id="stepper-value"
+                      type="text"
+                      value="1"
+                      min="0"
+                      max="100"
+                      step="1"
+                      readonly
+                    />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                </div>
+                <!-- ============== -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block detailedBtn-block"></div>
+  </div>
+</div>

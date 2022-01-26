@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<div class="page" data-name="homescreen">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only panel-open" data-panel="left">
+          <i class="icon f7-icons if-not-md">menu</i>
+          <i class="icon material-icons if-md">menu</i>
+        </a>
+      </div>
+      <div class="title">Home</div>
+    </div>
+  </div>
+
+  <!-- Scrollable page content-->
+  <div class="page-content">
+    <!-- Action Buttons Karen and DnD-->
+    <div class="block block-strong inset">
+      <p>Want to talk to a person? Or don't want to be disturbed right now?</p>
+      <p class="row">
+        <button
+
+          class="col button button-large button-raised button-outline call-a-waiter "
+
+          onclick="changeButtonState('.call-a-waiter');"
+        >
+          Call a Waiter
+        </button>
+        <button
+          class="col button button-large button-raised button-outline dnd"
+          onclick="changeButtonState('.dnd');"
+        >
+          Do Not Disturb
+        </button>
+      </p>
+    </div>
+    <div id="prep"></div>
+    <!-- Restaurant Information Styled Card -->
+    <div class="card demo-card-header-pic restaurant-card"></div>
+  </div>
+</div>

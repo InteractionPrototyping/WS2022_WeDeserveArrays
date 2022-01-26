@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<div class="page no-toolbar" data-name="payment">
+  <div class="navbar">
+    <div class="navbar-bg overview-navbar"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a
+          href="#view-order-succession"
+          class="link icon-only tab-link back-payment"
+          onclick="displayOverview('payment')"
+        >
+          <i class="icon f7-icons if-not-md">arrow_left</i>
+          <i class="icon material-icons if-md">arrow_back</i>
+        </a>
+        <div class="title">Payment Summary</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <!--order list-->
+    <div class="wrapper">
+      <div class="card">
+        <div class="card-header">Orders</div>
+        <div class="card-content card-content-padding payment-card">
+          <!-- Order Summary goes here! -->
+        </div>
+        <div class="card-content card-content-padding past-payment-card">
+          <!-- Order Summary goes here! -->
+        </div>
+        <div class="card-footer">
+          <div class="full-width">
+            <span class="dish">Total</span>
+            <span class="price payment-price">27,90€</span>
+            <br />
+          </div>
+        </div>
+      </div>
+      <!--Payment options-->
+      <div class="card payment-options">
+        <div class="list">
+          <ul>
+            <li>
+              <label class="item-radio item-radio-icon-start item-content">
+                <input
+                  type="radio"
+                  name="payment-radio"
+                  value="Phone"
+                  checked
+                />
+                <i class="icon icon-radio"></i>
+                <div class="item-inner">
+                  <div class="item-title">Pay by phone</div>
+                </div>
+              </label>
+            </li>
+            <li>
+              <label class="item-radio item-radio-icon-start item-content">
+                <input type="radio" name="payment-radio" value="Person" />
+                <i class="icon icon-radio"></i>
+                <div class="item-inner">
+                  <div class="item-title">Pay in person</div>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="center-button">
+        <a
+          href=""
+          class="col button button-large button-fill button-raised order-button tab-link text-color-black"
+          id="confirm-button"
+          onclick="app.tab.show('#view-homescreen');"
+          >Confirm</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

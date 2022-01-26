@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<div class="page" data-name="settings">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a class="link icon-only panel-open" data-panel="left">
+          <i class="icon material-icons if-md">menu</i>
+        </a>
+      </div>
+      <!--<div class="title sliding">Code Menu App</div>-->
+      <div class="title">Settings</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list" id="setting-screen">
+      <ul>
+        <li>
+          <a
+            class="item-link item-content tab-link"
+            onclick="displayTab('#view-allergy');displayToolbar(0);"
+          >
+            <div class="item-media">
+              <i class="material-icons color-white">settings</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">My Diet</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-link item-content">
+            <div class="item-media">
+              <i class="material-icons color-white">language</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Language</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-link item-content">
+            <div class="item-media">
+              <i class="material-icons color-white">format_size</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Font Size</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div
+            class="item-content nav-item item-title tab-link panel-close"
+            href="#"
+            onclick="window.localStorage.clear();app.dialog.alert(
+              'Restart to see changes',
+              'App has been reset'
+            );"
+          >
+            <div class="item-media">
+              <i class="icon f7-icons if-not-md"></i
+              ><i class="material-icons material-icons-outlined if-md">
+                restart_alt
+              </i>
+            </div>
+            <div class="item-inner">
+              <div>Factory data reset:<br />for demo purposes!</div>
+              <div class="item-after"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
